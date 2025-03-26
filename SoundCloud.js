@@ -7,7 +7,13 @@
 *******************************/
 var body = $response.body; 
 var obj = JSON.parse(body); 
-
+obj.plan = {
+    "vendor": "apple",
+    "id": "high_tier",
+    "manageable": true,
+    "plan_name": "SoundCloud Go+",
+    "plan_id": "go-plus"
+};
 obj.features = [
     { "name": "offline_sync", "enabled": true },
     { "name": "no_audio_ads", "enabled": true },
