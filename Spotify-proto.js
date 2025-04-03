@@ -58,7 +58,7 @@ function processMapObj(accountAttributesMapObj){
     accountAttributesMapObj['catalogue'] = {stringValue : 'premium'};
     accountAttributesMapObj['high-bitrate'] = {boolValue : true};
     accountAttributesMapObj['libspotify'] = {boolValue : true};
-    // 主页右下角的会员广告tab
+    // Premium Góc Dưới Bên Phải
     accountAttributesMapObj['nft-disabled'] = {stringValue : '1'};
     accountAttributesMapObj['shuffle'] = {boolValue : false};
     accountAttributesMapObj['audio-quality'] = {stringValue : '1'};
@@ -67,14 +67,14 @@ function processMapObj(accountAttributesMapObj){
     accountAttributesMapObj['can_use_superbird'] = {boolValue : true};
     accountAttributesMapObj['type'] = {stringValue : 'premium'};
 
-    // vip新增的
+    // VIP New
     accountAttributesMapObj['loudness-levels'] = {stringValue : '1:-9.0,0.0,3.0:-2.0'};
     accountAttributesMapObj['payments-initial-campaign'] = {stringValue : 'web'};
     accountAttributesMapObj['shuffle-eligible'] = {boolValue : true};
     accountAttributesMapObj['unrestricted'] = {boolValue : true};
-    // 儿童不宜
+    // Not suitable for children
     // accountAttributesMapObj['filter-explicit-content'] = {boolValue : true};
-    // 决定customize是否有效 有的用户没有此属性
+    // Decide whether the customization is effective, some users do not have this attribute
     accountAttributesMapObj['com.spotify.madprops.use.ucs.product.state'] = {boolValue : true};
 
     delete accountAttributesMapObj['ad-use-adlogic'];
@@ -88,7 +88,7 @@ function processMapObj(accountAttributesMapObj){
     // accountAttributesMapObj['ab-nft-navigation-menu'] = {stringValue : '3'};
     // accountAttributesMapObj['ab-desktop-hide-follow'] = {boolValue : false};
 
-    // 不确定的字段
+    // Uncertain field
     // accountAttributesMapObj['social-session'] = {boolValue : true};
     // accountAttributesMapObj['head-files-url'] = {stringValue : 'https://heads-fa.scdn.co/head/{file_id}'};
     // accountAttributesMapObj['publish-playlist'] = {boolValue : true};
