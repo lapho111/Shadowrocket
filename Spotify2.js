@@ -1075,7 +1075,7 @@ accountAttributesMapObj['ads'] = {boolValue : false};
 accountAttributesMapObj['catalogue'] = {stringValue : 'premium'};
 accountAttributesMapObj['high-bitrate'] = {boolValue : true};
 accountAttributesMapObj['libspotify'] = {boolValue : true};
-//Thanh Premium Trang Chủ
+// 主⻚右下⻆的会员⼴告tab
 accountAttributesMapObj['nft-disabled'] = {stringValue : '1'};
 accountAttributesMapObj['shuffle'] = {boolValue : false};
 accountAttributesMapObj['audio-quality'] = {stringValue : '1'};
@@ -1083,15 +1083,16 @@ accountAttributesMapObj['offline'] = {boolValue : true};
 accountAttributesMapObj['pause-after'] = {longValue : 0};
 accountAttributesMapObj['can_use_superbird'] = {boolValue : true};
 accountAttributesMapObj['type'] = {stringValue : 'premium'};
-// VIP Mới
+// vip新增的
 accountAttributesMapObj['loudness-levels'] = {stringValue :
 '1:-9.0,0.0,3.0:-2.0'};
 accountAttributesMapObj['payments-initial-campaign'] = {stringValue : 'web'};
 accountAttributesMapObj['shuffle-eligible'] = {boolValue : true};
 accountAttributesMapObj['unrestricted'] = {boolValue : true};
-// K Phù Hợp Trẻ Nhỏ
+// ⼉童不宜
 // accountAttributesMapObj['filter-explicit-content'] = {boolValue : true};
-// accountAttributesMapObj['com.spotify.madprops.use.ucs.product.state'] =
+// 决定customize是否有效 有的⽤户没有此属性
+accountAttributesMapObj['com.spotify.madprops.use.ucs.product.state'] =
 {boolValue : true};
 delete accountAttributesMapObj['ad-use-adlogic'];
 delete accountAttributesMapObj['ad-catalogues'];
@@ -1103,7 +1104,7 @@ delete accountAttributesMapObj['ad-catalogues'];
 '0'};
 // accountAttributesMapObj['ab-nft-navigation-menu'] = {stringValue : '3'};
 // accountAttributesMapObj['ab-desktop-hide-follow'] = {boolValue : false};
-// Lạp Hộ Chào Bạn. hehe
+// 不确定的字段
 // accountAttributesMapObj['social-session'] = {boolValue : true};
 // accountAttributesMapObj['head-files-url'] = {stringValue : 'https://heads-
 fa.scdn.co/head/{file_id}'};
