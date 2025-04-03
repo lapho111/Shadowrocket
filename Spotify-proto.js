@@ -87,6 +87,3 @@ function processMapObj(accountAttributesMapObj){
     // accountAttributesMapObj['head-files-url'] = {stringValue : 'https://heads-fa.scdn.co/head/{file_id}'};
     // accountAttributesMapObj['publish-playlist'] = {boolValue : true};
 }
-
-Dịch
-
