@@ -1,12 +1,3 @@
-/****************************** 
-📌 Tác Giả：LapHo 
-📌 Cập Nhật：2025-2-17   
-📌 Liên Lạc：Zalo: 0886632736   
-📌 Face Book: https://www.facebook.com/lapho111 
-******************************/ 
-
-
-
 let protobuf;!function(g){"use strict";!function(r,e,t){var i=function t(i){var
 n=e[i];return n||r[i][0].call(n=e[i]={exports:{}},t,n,n.exports),n.exports}
 (t[0]);protobuf=i.util.global.protobuf=i,"function"==typeof
@@ -1059,9 +1050,9 @@ processMapObj(accountAttributesMapObj);
 body = ucsResponseWrapperType.encode(ucsResponseWrapperMessage).finish();
 console.log('customize');
 } else {
-$notification.post('Spotify Unlock Premium', "Path/Request Method Mismatch:", method +
+$notification.post('spotify解锁premium', "路径/请求⽅法匹配错误:", method +
 "," + url);
-}                                                           
+}
 // console.log(`${body.byteLength}---${body.buffer.byteLength}`);
 if(isQuanX){
 $done({bodyBytes: body.buffer.slice(body.byteOffset, body.byteLength +
@@ -1084,7 +1075,7 @@ accountAttributesMapObj['ads'] = {boolValue : false};
 accountAttributesMapObj['catalogue'] = {stringValue : 'premium'};
 accountAttributesMapObj['high-bitrate'] = {boolValue : true};
 accountAttributesMapObj['libspotify'] = {boolValue : true};
-// Tab quảng cáo thành viên ở góc dưới bên phải trang chính
+//Thanh Premium Trang Chủ
 accountAttributesMapObj['nft-disabled'] = {stringValue : '1'};
 accountAttributesMapObj['shuffle'] = {boolValue : false};
 accountAttributesMapObj['audio-quality'] = {stringValue : '1'};
@@ -1092,16 +1083,15 @@ accountAttributesMapObj['offline'] = {boolValue : true};
 accountAttributesMapObj['pause-after'] = {longValue : 0};
 accountAttributesMapObj['can_use_superbird'] = {boolValue : true};
 accountAttributesMapObj['type'] = {stringValue : 'premium'};
-// Vip Mới
+// VIP Mới
 accountAttributesMapObj['loudness-levels'] = {stringValue :
 '1:-9.0,0.0,3.0:-2.0'};
 accountAttributesMapObj['payments-initial-campaign'] = {stringValue : 'web'};
 accountAttributesMapObj['shuffle-eligible'] = {boolValue : true};
 accountAttributesMapObj['unrestricted'] = {boolValue : true};
-// Không phù hợp cho trẻ em
+// K Phù Hợp Trẻ Nhỏ
 // accountAttributesMapObj['filter-explicit-content'] = {boolValue : true};
-// Quyết định xem customize có hiệu lực không; một số người dùng không có thuộc tính này
-accountAttributesMapObj['com.spotify.madprops.use.ucs.product.state'] =
+// accountAttributesMapObj['com.spotify.madprops.use.ucs.product.state'] =
 {boolValue : true};
 delete accountAttributesMapObj['ad-use-adlogic'];
 delete accountAttributesMapObj['ad-catalogues'];
@@ -1113,7 +1103,7 @@ delete accountAttributesMapObj['ad-catalogues'];
 '0'};
 // accountAttributesMapObj['ab-nft-navigation-menu'] = {stringValue : '3'};
 // accountAttributesMapObj['ab-desktop-hide-follow'] = {boolValue : false};
-// Các trường không chắc chắn
+// Lạp Hộ Chào Bạn. hehe
 // accountAttributesMapObj['social-session'] = {boolValue : true};
 // accountAttributesMapObj['head-files-url'] = {stringValue : 'https://heads-
 fa.scdn.co/head/{file_id}'};
