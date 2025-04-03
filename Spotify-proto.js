@@ -35,7 +35,7 @@ if(resStatus !== 200) {
         body = ucsResponseWrapperType.encode(ucsResponseWrapperMessage).finish();
         console.log('customize');
     } else {
-        $notification.post('spotify解锁premium', "路径/请求方法匹配错误:", method + "," + url);
+        $notification.post('Spotify.Unlock.Premium', "Path/Request.Method.Mismatch.Error:", method + "," + url);
     }
     // console.log(`${body.byteLength}---${body.buffer.byteLength}`);
     if(isQuanX){
