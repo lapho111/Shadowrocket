@@ -4,7 +4,7 @@ let objc = {
     {
       "is_eligible_for_grant" : true,
       "limitation" : {
-        "max_count" : 10,
+        "max_count" : 30,
         "limits_exceeded" : false
       },
       "expire_date" : 4102444800000,
