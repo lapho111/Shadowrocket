@@ -1,24 +1,27 @@
-// PhotoRoom Premium Unlock (by modifying RevenueCat response)
-let response = JSON.parse($response.body);
+// PhotoRoom Premium Unlock (FIXED structure)
+let obj = JSON.parse($response.body);
 
-response.subscriber = {
+// Gói thuê bao và entitlement phải trùng tên: com.background.business.yearly
+let sub_id = "com.background.business.yearly";
+
+obj.subscriber = {
+  first_seen: "2023-02-23T03:33:33Z",
   entitlements: {
     business: {
-      expires_date: "2099-09-09T09:09:09Z",
-      product_identifier: "com.background.business.yearly",
-      purchase_date: "2022-09-09T09:09:09Z"
+      expires_date: "2033-02-23T03:33:33Z",
+      product_identifier: sub_id,
+      purchase_date: "2023-02-23T03:33:33Z"
     }
   },
-  first_seen: "2023-02-23T03:33:33Z",
-  subscriptions: {
-    "com.background.business.yearly": {
-      expires_date: "2099-09-09T09:09:09Z",
-      original_purchase_date: "2022-09-09T09:09:09Z",
-      purchase_date: "2022-09-09T09:09:09Z",
-      ownership_type: "PURCHASED",
-      store: "app_store"
-    }
-  }
+  subscriptions: {}
 };
 
-$done({ body: JSON.stringify(response) });
+obj.subscriber.subscriptions[sub_id] = {
+  expires_date: "2033-02-23T03:33:33Z",
+  original_purchase_date: "2023-02-23T03:33:33Z",
+  purchase_date: "2023-02-23T03:33:33Z",
+  ownership_type: "PURCHASED",
+  store: "app_store"
+};
+
+$done({ body: JSON.stringify(obj) });
